@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+/* NAV */
+header{
+    width: 70%;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
