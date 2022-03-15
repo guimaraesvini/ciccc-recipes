@@ -1,8 +1,8 @@
 body{
-    background-color: #343F56;
+    /* background-color: #343F56; */
 }
 
-/* NAV */
+/* ===== NAV ======== */
 header{
     background-color: white;
 }
@@ -17,4 +17,139 @@ nav ul{
 nav a{
     text-decoration: none;
     color:  #343F56;
+}
+
+
+/* ====== MAIN BANNER ======== */
+.hero{
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ======== ABOUT US ========= */
+.about-us{
+    background-color: #F5E6CA;
+    height: 70vh;
+    gap: 1em;
+    display: flex;
+    color: #343F56;
+}
+
+.about-us article{
+    padding: 70px 0 70px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us h2{
+    font-size: 42px;
+    font-family: 'Rubik';
+}
+
+.about-us p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.about-us img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.about-us ul li{
+    display: inline-block;
+    margin: 30px 10px 30px 10px;
+}
+
+/* ======== RECIPES ========= */
+.recipes{
+    background-color: #FB9300;
+    padding: 40px 0;
+}
+
+.recipes article{
+    padding: 30px 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 1rem;
+}
+.recipes img{
+    max-width: 500px;
+}
+
+.recipes article div{
+    width: 50%;
+    padding: 0 30px;
+}
+
+.recipes h3{
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.recipes p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.recipes button{
+    font-family: 'Rubik';
+    border: none;
+    background-color: #343F56;
+    color: #FB9300;
+    text-transform: uppercase;
+    padding: 10px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.recipes button:hover{
+    padding-right: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ======== FOOTER ========= */
+footer{
+    background-color: #343F56;
+    height: 50px;
+}
+
+footer div{
+    width: 15%;
+    margin: 0 auto;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+
+footer ul li{
+    font-size: 22px;
+}
+
+footer ul a{
+    color: white;
 }
