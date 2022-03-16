@@ -18,14 +18,29 @@
 		<nav>
 			<ul>
                 <li><a href="index.html"><img src="images/logo-ciccc-recipes.png" alt="Logo CICCC RECIPES"></a></li>
-                <li><a href="#">NAV</a></li>    
+                <li><a href="#">NAV</a></li>
 			</ul>
 		</nav>
     </header>
 
     <main>
-        <section class="hero">
-
+        <section class="hero container">
+            <div class="slider">
+                <div class="slider__slides">
+                    <div id="slideshow" class="slider__image active" style="background-image: url(./images/kyoto.jpeg)"><span>Sample</span></div>
+                    <div id="slideshow" class="slider__image" style="background-image: url(./images/Fanesca.jpg);"><span>Sample</span></div>
+                    <div id="slideshow" class="slider__image" style="background-image: url(./images/tokyo.jpeg);"><span>Sample</span></div>
+                    <div id="slideshow" class="slider__image" style="background-image: url(./images/Tonteki.jpeg);"><span>Sample</span></div>
+                </div>
+                <div id="nav-button--prev" class="slider__nav-button"></div>
+                <div id="nav-button--next" class="slider__nav-button"></div>
+                <div class="slider__nav">
+                    <div class="slider__navlink active"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                </div>
+            </div>
         </section>
 
         <section class="about-us">
@@ -111,7 +126,9 @@
     </script>
     
 
+ 
 <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./slider.js"></script>
 </body>
 </html>
