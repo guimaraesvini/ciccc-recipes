@@ -1,5 +1,6 @@
 body{
     background-color: #F5E6CA;
+    scroll-behavior: smooth;
 }
 
 /* NAV */
@@ -25,7 +26,7 @@ nav a{
     display: none;
 }
 
-.active[data-tab-content]{
+[data-tab-content].active{
     display: block;
 }
 
@@ -35,7 +36,12 @@ section {
     
 }
 
-
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .tabs{
     display: flex;
     color: #343F56;
@@ -64,4 +70,88 @@ section {
 .tab:hover {
     background-color: #C8C6C6;
     border-radius: 10px;
+}
+/* 
+INSIDE THE TABS */
+
+.image-recipe{
+    height: auto;
+    width: 900px;
+    border-radius: 20px;
+    
+}
+.ingredients-container{
+    margin-top:20px;
+}
+.tab-content{
+    display: flex;
+    justify-content:center ;
+    width: 1174.320px;
+    border-bottom: #343F56 2px solid;
+}
+h2{
+    font-family:'Rubik', sans-serif  ;
+    font-size: 25px;
+}
+.ln{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.ingredients-list{
+    width: 680px;
+    font-size: 20px;
+}
+
+.ul-ingredients{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family:'Montserrat', sans-serif ;
+    list-style-type:square ;
+    line-height: 40px;
+}
+
+.embebed-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+ol{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family:'Montserrat', sans-serif ;
+    line-height: 40px;
+    list-style-type: decimal;
+    font-size: 20px;
+    width: 800px;
+    text-justify:auto;
+}
+.instruct{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+/* Photos */
+
+/* 
+nutrition */
+
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 20px;
+}
+.ul1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family:'Montserrat', sans-serif ;
+    list-style-type:square ;
+    line-height: 40px;
 }
