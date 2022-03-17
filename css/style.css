@@ -39,13 +39,13 @@ nav a{
     display: block;
     position: relative;
     width: 100%;
-    max-width: 1440px;
     overflow: hidden;
 }
 
 .slider__slides{
     width: 100%;
-    padding-top: 51%;
+    /* padding-top: 50%; */
+    padding-top: 710px;
 }
 
 .slider__image{
@@ -81,8 +81,9 @@ nav a{
 
 .slider__nav-button{
     position: absolute;
-    height: 70px;
-    width: 70px;
+    margin: 40px;
+    height: 40px;
+    width: 40px;
     background-color: #333;
     opacity: 8;
     cursor: pointer;
@@ -106,7 +107,7 @@ nav a{
     content: '';
     position: absolute;
     border: solid white;
-    border-width: 0 4px 4px 0;
+    border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     width: 25%;
@@ -141,8 +142,8 @@ nav a{
 
 .slider__navlink{
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     border: 1px #fff solid;
     background-color: #333;
@@ -202,22 +203,6 @@ nav a{
 
 /* ABOUT US TOOTIP ========= */
 
-.tooltip {
-    /* display:none; */
-    background: black!important;
-    font-size:12px;
-    height:10px;
-    width:80px;
-    padding:10px;
-    color:#fff; 
-    z-index: 99;
-    bottom: 10px;
-    border: 2px solid white;
-/* for IE */
-  filter:alpha(opacity=80);
-  /* CSS3 standard */
-  opacity:0.8;
-}
 
 
 /* ======== RECIPES ========= */
