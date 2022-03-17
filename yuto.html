@@ -8,6 +8,9 @@
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/yuto.css">
@@ -45,7 +48,7 @@
                                 <li>Black Pepper and Salt both 1/8 Tbsp(Optional)</li>
                                 <li>Garlic</li>
                             </ul>
-                            <div class="ln" ><h2>Serve</h2></div>
+                            <div class="ln" ><h2>Serve with</h2></div>
                             <ul class="ul-ingredients">
                                 <li>White rice</li>
                                 <li>Miso soup</li>
@@ -80,6 +83,22 @@
                 </div>
             </div>
             <div id="photo" data-tab-content class="">
+                <div class="hero container">
+                    <div class="slider">
+                        <div class="slider__slides">
+                            <div id="slideshow" class="slider__image active" style="background-image: url(./images/Tonteki_GloveCut.jpeg)"></div>
+                            <div id="slideshow" class="slider__image" style="background-image: url(./images/Tonteki2.jpeg);"></div>
+                            <div id="slideshow" class="slider__image" style="background-image: url(./images/p_omisenogoannnai_t2.jpeg);"></div>
+                        </div>
+                        <div id="nav-button--prev" class="slider__nav-button"></div>
+                        <div id="nav-button--next" class="slider__nav-button"></div>
+                        <div class="slider__nav">
+                            <div class="slider__navlink active"></div>
+                            <div class="slider__navlink"></div>
+                            <div class="slider__navlink"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="nutrition" data-tab-content class="">
                 <div class="nutrition">
@@ -103,7 +122,17 @@
             </div>
         </div>
     </main>
-
+    <footer>
+        <div>
+            <ul>
+				<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 <script src="./script/recipe.js"></script>
+<script src="./script/slider.js"></script>
 </body>
 </html>
