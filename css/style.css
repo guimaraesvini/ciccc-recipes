@@ -44,7 +44,8 @@ nav a{
 
 .slider__slides{
     width: 100%;
-    padding-top: 50%;
+    /* padding-top: 50%; */
+    padding-top: 710px;
 }
 
 .slider__image{
