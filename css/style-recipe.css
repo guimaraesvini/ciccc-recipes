@@ -177,7 +177,7 @@ nutrition */
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
@@ -254,8 +254,8 @@ nutrition */
 }
 
 .carousel-photo{
-    height: 500px;
-    width: 850px;
+    height: 600px;
+    width: 1050px;
 }
 
 /* =====  MODAL ====== */
