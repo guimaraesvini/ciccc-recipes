@@ -11,6 +11,7 @@
     <!-- -----SITE----- -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
 </head>
 <body>
 
@@ -53,10 +54,10 @@
                 <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cum dolores, autem rem modi repellat beatae explicabo, saepe voluptatum quasi aut alias reiciendis quod sed. Deleniti architecto laboriosam sapiente exercitationem.</P>
                 <div>
                     <ul>
-                        <li><img  src="images/jorge.jpg" alt="Jorge" data-togg="tooltip" title="I'm Jorge"></li>
-                        <li><img src="images/nicolas.jpg" alt="Nicolas" data-togg="tooltip" title="I'm Nicolas"></li>
-                        <li><img src="images/vini.jpeg" alt="Vini" data-togg="tooltip" title="I'm Vini"></li>
-                        <li><img src="images/yuto.jpg" alt="Yuto"data-togg="tooltip" title="I'm Yuto"></li>
+                        <li><img  src="images/jorge.jpg" alt="Jorge" title="I'm Jorge"></li>
+                        <li><img src="images/nicolas.jpg" alt="Nicolas" title="I'm Nicolas"></li>
+                        <li><img src="images/vini.jpeg" alt="Vini" title="I'm Vini"></li>
+                        <li><img src="images/yuto.jpg" alt="Yuto"title="I'm Yuto"></li>
                     </ul>
 
                 </div>
@@ -119,16 +120,15 @@
         </footer>
     </main>
 
-    <script>
-        $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-    
-
  
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $( function() {
+      $( document ).tooltip();
+    } );
+</script>
 <script src="./slider.js"></script>
 </body>
 </html>
