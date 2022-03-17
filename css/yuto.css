@@ -33,7 +33,6 @@ nav a{
 section {
     display: flex;
     justify-content: center;
-    
 }
 
 main{
@@ -71,8 +70,7 @@ main{
     background-color: #C8C6C6;
     border-radius: 10px;
 }
-/* 
-INSIDE THE TABS */
+/*INSIDE THE TABS */
 
 .image-recipe{
     height: auto;
@@ -132,8 +130,145 @@ ol{
 }
 /* Photos */
 
-/* 
-nutrition */
+.hero{
+    width: 1000px;
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    height: 90%;
+    margin: 2em 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__slides{
+    width: 100%;
+    padding-top: 710px;
+}
+
+.slider__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    transition: 1s;
+    opacity: 0;
+    background-size: cover;
+}
+
+.slider__image > span{
+    color: rgb(255 250 255);
+    font-size: 2em;
+    font-weight: 900;
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    transition: 2s;
+}
+
+.slider__image.active{
+    transition: 3s;
+    opacity: 1;
+}
+
+.slider__nav-button{
+    position: absolute;
+    margin: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: #333;
+    opacity: 8;
+    cursor: pointer;
+}
+
+#nav-button--prev{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+#nav-button--next{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+#nav-button--prev::after, #nav-button--next::after{
+    content: '';
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 25%;
+    height: 25%;
+}
+
+#nav-button--next::after{
+    top: 50%;
+    right: 45%;
+    transform: translate(25%, -50%) rotate(-45deg);
+}
+#nav-button--prev::after{
+    top: 50%;
+    left: 28%;
+    transform: translate(25%, -50%) rotate(135deg);
+}
+
+@media screen and (max-width: 640px) {
+  .slider__nav-button {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.slider__nav{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: 8;
+    margin: 0 10px;
+    /* cursor: pointer; */
+}
+
+.slider__navlink.active{
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+
+/*nutrition */
 
 .nutrition{
     display: flex;
@@ -153,4 +288,29 @@ nutrition */
     font-family:'Montserrat', sans-serif ;
     list-style-type:square ;
     line-height: 40px;
+}
+
+footer{
+    background-color: #343F56;
+    height: 50px;
+}
+
+footer div{
+    width: 15%;
+    margin: 0 auto;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+
+footer ul li{
+    font-size: 22px;
+}
+
+footer ul a{
+    color: white;
 }
