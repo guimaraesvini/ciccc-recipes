@@ -23,7 +23,6 @@ nav a{
 /* ====== MAIN BANNER ======== */
 .hero{
     height: 100vh;
-    /* background-image: url(../images/banner.jpg); */
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
@@ -43,8 +42,6 @@ nav a{
 }
 
 .slider__slides{
-    width: 100%;
-    /* padding-top: 50%; */
     padding-top: 710px;
 }
 
@@ -149,7 +146,6 @@ nav a{
     background-color: #333;
     opacity: 8;
     margin: 0 10px;
-    /* cursor: pointer; */
 }
 
 .slider__navlink.active{
