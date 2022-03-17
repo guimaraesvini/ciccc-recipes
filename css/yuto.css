@@ -33,7 +33,6 @@ nav a{
 section {
     display: flex;
     justify-content: center;
-    
 }
 
 main{
@@ -71,8 +70,7 @@ main{
     background-color: #C8C6C6;
     border-radius: 10px;
 }
-/* 
-INSIDE THE TABS */
+/*INSIDE THE TABS */
 
 .image-recipe{
     height: auto;
@@ -157,7 +155,6 @@ ol{
 
 .slider__slides{
     width: 100%;
-    /* padding-top: 50%; */
     padding-top: 710px;
 }
 
