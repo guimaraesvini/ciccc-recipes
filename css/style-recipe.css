@@ -1,6 +1,7 @@
 body{
     background-color: #F5E6CA;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* NAV */
@@ -256,3 +257,69 @@ nutrition */
     height: 500px;
     width: 850px;
 }
+
+/* =====  MODAL ====== */
+
+
+  .sign-overlay {
+    visibility: hidden;
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+  }
+  
+  .modal-content {
+    width: 50%;
+    height: 50%;
+    margin: 10% auto;
+    background: white;
+    border: 3px solid #FB9300;;
+  }
+
+ .modal-content ul li{
+     display: inline-block;
+ }
+
+ .modal-content img{
+     max-width: 200px;
+ }
+
+ .modal-content h3{
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    color: #343F56;
+ }
+  
+  .sign-overlay.active {
+    visibility: visible;
+    text-align: center;
+  }
+
+  .open{
+    font-family: 'Rubik';
+    border: none;
+    background-color: #343F56;
+    color: #FB9300;
+    text-transform: uppercase;
+    padding: 10px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.open:hover{
+    padding-right: 50px;
+    transition: all 0.2s ease-in-out;
+}
+  
+  button {
+    cursor: pointer;
+  }
