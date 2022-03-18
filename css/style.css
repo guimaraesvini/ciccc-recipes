@@ -215,6 +215,30 @@ bottom: 0.3em;
     padding: 40px 0;
 }
 
+.recipes__container.is-active{
+    transition: all 2s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in{
+    transform: translateX(-150px);
+    opacity: 0;
+}
+
+.recipes__container.is-active > article:first-child{
+    transition-delay: 1s;
+}
+.recipes__container.is-active > article:nth-child(2){
+    transition-delay: 1.8s;
+}
+.recipes__container.is-active > article:nth-child(3){
+    transition-delay: 3s;
+}
+.recipes__container.is-active > article:last-child{
+    transition-delay: 5s;
+}
+
 .recipes article{
     padding: 30px 0;
     width: 70%;
