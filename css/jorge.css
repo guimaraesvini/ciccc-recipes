@@ -4,8 +4,6 @@
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-   
-
 }
 
 .wrapper{
@@ -20,9 +18,6 @@
 	height: 100%;
     position: relative;
     margin-top: 20px;
-   
-
-
 }
 
 
@@ -34,8 +29,6 @@
     display: flex;
     margin-left: 150px;
 }
-
-
 
 .navbar > ul{
 	display: flex;
@@ -76,8 +69,6 @@
 .navbar .dd_menu ul li a.active{
 	background: #555555;
 }
-
-
 
 .navbar .dd_menu{
 	position: absolute;
