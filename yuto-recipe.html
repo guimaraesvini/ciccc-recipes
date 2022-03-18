@@ -4,22 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <title>Aguachile_Jorge</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/style-recipe.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-    <title>Nicolas Recipie</title>
+    <link rel="stylesheet" href="css/jorge.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/yuto.css">
 </head>
 <body>
     <header>
-		<nav>
-			<ul>
-                <li><a href="index.html"><img src="images/logo-ciccc-recipes.png" alt="Logo CICCC RECIPES"></a></li>
-                <li><a href="#">NAV</a></li>    
-			</ul>
-		</nav>
-	</header>
+        <div class="wrapper">
+    
+            <div class="navbar">
+                <ul>
+                    <a href="index.html"><img src="images/logo-ciccc-recipes.png" alt="Logo CICCC RECIPES"></a>
+                    <li><a href="#" class="a_parent">
+                        <div class="wrap">
+                        
+                            <span class="text">Recipes</span>
+                        </div>
+                        </a>
+                        <div class="dd_menu">
+                            <ul>
+                                <li>
+                                    <a href="vini-recipe.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                            
+                                            
+                                            <span class="text">
+                                            Vini
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="nicolas-recipe.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                            
+                                            
+                                            <span class="text">
+                                            Nicolas
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jorge-recipe.html" class="dd_menu_a">
+                                        <div class="wrap">
+                                            
+                                            <span class="text">
+                                            Jorge
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="yuto-recipe.html"  class="dd_menu_a">
+                                        <div class="wrap">
+                                            
+                                            <span class="text">Yuto</span>
+                                        </div>
+                                    </a>
+                                    
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </li>			
+                    </ul>
+            </div>
+        </div>
+        <script src="script/jorge.js"></script>
+    </header>
     <section class="sec">
         <ul class="tabs">
             <li data-tab-target="#ingredients" class="active tab" >INGREDIENTS</li>
@@ -49,6 +116,24 @@
                                 <li>White rice</li>
                                 <li>Miso soup</li>
                             </ul>
+
+                            <div class="sign-overlay">
+                                <div class="modal-content">
+                                    <h3>Click to choose a Supermarket</h3>
+                                <ul>
+                                    <li><a href="https://www.realcanadiansuperstore.ca/" target="_blank"><img src="images/canediam-superstore.jpg" alt=""></a></li>
+                                    <li><a href="https://www.iga.net/" target="_blank"><img src="images/logo-iga.jpg" alt=""></a></li>
+                                    <li><a href="https://www.saveonfoods.com/" target="_blank"><img src="images/logo-save-on-foods.jpg" alt=""></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://www.safeway.ca/" target="_blank"><img src="images/logo-safeway.jpg" alt=""></a></li>
+                                    <li><a href="https://www.walmart.ca/en" target="_blank"><img src="images/logo-walmart.jpg" alt=""></a></li>
+                                    <li><a href="https://www.nofrills.ca/" target="_blank"><img src="images/logo-no-frills.jpg" alt=""></a></li>
+                                </ul>
+                                </div>
+                            </div>
+
+                            <button class="open">Buy Ingredients</button>
                         </div>
                     </div>
                 </div>
