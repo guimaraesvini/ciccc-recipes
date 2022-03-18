@@ -1,10 +1,14 @@
 body{
     /* background-color: #343F56; */
+    overflow-x: hidden;
 }
 
 /* ===== NAV ======== */
 header{
-    background-color: white;
+ 
+    z-index: 3;
+    justify-content: space-between;
+   
 }
 nav ul{
     width: 70%;
@@ -36,7 +40,7 @@ nav a{
 
 .slider{
     display: block;
-    position: relative;
+position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -47,8 +51,9 @@ nav a{
 
 .slider__image{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: bottom;
+    justify-content: bottom
+;
     font-size: 50px;
     font-weight: bold;
     position: absolute;
@@ -63,12 +68,15 @@ nav a{
 
 .slider__image > span{
     color: rgb(255 250 255);
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 1.5em;
+
     position: absolute;
-    top: 0.3em;
+bottom: 0.3em;
+    
     left: 0.3em;
     transition: 2s;
+    margin-left: 190px;
+    margin-bottom: 100px;
 }
 
 .slider__image.active{
@@ -81,7 +89,7 @@ nav a{
     margin: 40px;
     height: 40px;
     width: 40px;
-    background-color: #333;
+    background-color: rgb(226, 226, 226);
     opacity: 8;
     cursor: pointer;
 }
@@ -306,3 +314,4 @@ footer ul li{
 footer ul a{
     color: white;
 }
+
