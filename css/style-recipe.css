@@ -111,6 +111,10 @@ h2{
     line-height: 40px;
 }
 
+.ul-ingredients li{
+    list-style: square;
+}
+
 .embebed-container{
     margin-top: 40px;
     margin-bottom: 40px;
