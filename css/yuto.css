@@ -4,9 +4,6 @@ body{
 }
 
 /* NAV */
-header{
-   
-}
 nav ul{
     width: 70%;
     display: flex;
