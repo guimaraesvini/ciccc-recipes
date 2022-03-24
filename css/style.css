@@ -1,5 +1,10 @@
+:root{
+    --orangeColor:#FB9300;
+    --grayColor: #343F56;
+    --whiteColor: white;
+}
+
 body{
-    /* background-color: #343F56; */
     overflow-x: hidden;
 }
 
@@ -19,7 +24,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color:  #343F56;
+    color:  var(--grayColor);
 }
 
 
@@ -110,7 +115,7 @@ bottom: 0.3em;
 #nav-button--prev::after, #nav-button--next::after{
     content: '';
     position: absolute;
-    border: solid white;
+    border: solid var(--whiteColor);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -166,7 +171,7 @@ bottom: 0.3em;
     height: 70vh;
     gap: 1em;
     display: flex;
-    color: #343F56;
+    color: var(--grayColor);
 }
 
 .about-us article{
@@ -206,7 +211,7 @@ bottom: 0.3em;
 
 /* ======== RECIPES ========= */
 .recipes{
-    background-color: #FB9300;
+    background-color: var(--orangeColor);
     padding: 40px 0;
 }
 
@@ -240,7 +245,7 @@ bottom: 0.3em;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--whiteColor);
     gap: 1rem;
 }
 .recipes img{
@@ -270,8 +275,8 @@ bottom: 0.3em;
 .recipes button{
     font-family: 'Rubik';
     border: none;
-    background-color: #343F56;
-    color: #FB9300;
+    background-color: var(--grayColor);
+    color: var(--orangeColor);
     text-transform: uppercase;
     padding: 10px 26px;
     font-size: 16px;
@@ -286,7 +291,7 @@ bottom: 0.3em;
 
 /* ======== FOOTER ========= */
 footer{
-    background-color: #343F56;
+    background-color: var(--grayColor);
     height: 50px;
 }
 
@@ -307,6 +312,6 @@ footer ul li{
 }
 
 footer ul a{
-    color: white;
+    color: var(--whiteColor);
 }
 
