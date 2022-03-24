@@ -874,7 +874,7 @@ button.ui-button::-moz-focus-inner {
 .ui-tooltip {
 	/* padding: 8px; */
 	position: absolute;
-	width: 116px;
+	width: 150px;
 	text-align: center;
 	z-index: 9999;
 	color: white!important;

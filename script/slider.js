@@ -8,14 +8,14 @@ let currentSlide = 0;
 
 const nextSlide = () => {
   currentSlide == slides.length - 1 ? (currentSlide = 0) : currentSlide++;
-  console.log(currentSlide);
+  // console.log(currentSlide);
   navLinkChange();
   changeSlide();
 };
 
 const prevSlide = () => {
   currentSlide == 0 ? (currentSlide = slides.length - 1) : currentSlide--;
-  console.log(currentSlide);
+  // console.log(currentSlide);
   navLinkChange();
   changeSlide();
 };
@@ -47,7 +47,7 @@ prevButton.addEventListener("click", () => {
 
 //Automatic Change
 const autoChange = () => {
-  console.log("auto")
+  // console.log("auto")
   navLinkChange();
   nextSlide();
 };

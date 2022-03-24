@@ -1,10 +1,13 @@
 body{
     /* background-color: #343F56; */
+    overflow-x: hidden;
 }
 
 /* ===== NAV ======== */
 header{
-    background-color: white;
+     z-index: 3;
+    justify-content: space-between;
+   
 }
 nav ul{
     width: 70%;
@@ -21,13 +24,12 @@ nav a{
 
 
 /* ====== MAIN BANNER ======== */
-.hero{
+/* .hero{
     height: 100vh;
-    /* background-image: url(../images/banner.jpg); */
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 .container{
     display: flex;
@@ -37,21 +39,20 @@ nav a{
 
 .slider{
     display: block;
-    position: relative;
+position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .slider__slides{
-    width: 100%;
-    /* padding-top: 50%; */
     padding-top: 710px;
 }
 
 .slider__image{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: bottom;
+    justify-content: bottom
+;
     font-size: 50px;
     font-weight: bold;
     position: absolute;
@@ -66,12 +67,15 @@ nav a{
 
 .slider__image > span{
     color: rgb(255 250 255);
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 1.5em;
+
     position: absolute;
-    top: 0.3em;
+bottom: 0.3em;
+    
     left: 0.3em;
     transition: 2s;
+    margin-left: 190px;
+    margin-bottom: 100px;
 }
 
 .slider__image.active{
@@ -84,7 +88,7 @@ nav a{
     margin: 40px;
     height: 40px;
     width: 40px;
-    background-color: #333;
+    background-color: rgb(226, 226, 226);
     opacity: 8;
     cursor: pointer;
 }
@@ -149,7 +153,6 @@ nav a{
     background-color: #333;
     opacity: 8;
     margin: 0 10px;
-    /* cursor: pointer; */
 }
 
 .slider__navlink.active{
@@ -201,14 +204,34 @@ nav a{
     margin: 30px 10px 30px 10px;
 }
 
-/* ABOUT US TOOTIP ========= */
-
-
-
 /* ======== RECIPES ========= */
 .recipes{
     background-color: #FB9300;
     padding: 40px 0;
+}
+
+.recipes__container.is-active{
+    transition: all 2s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in{
+    transform: translateX(-150px);
+    opacity: 0;
+}
+
+.recipes__container.is-active > article:first-child{
+    transition-delay: 1s;
+}
+.recipes__container.is-active > article:nth-child(2){
+    transition-delay: 1.8s;
+}
+.recipes__container.is-active > article:nth-child(3){
+    transition-delay: 3s;
+}
+.recipes__container.is-active > article:last-child{
+    transition-delay: 5s;
 }
 
 .recipes article{
@@ -286,3 +309,4 @@ footer ul li{
 footer ul a{
     color: white;
 }
+
