@@ -3,7 +3,7 @@ var dd_menu_a = document.querySelectorAll(".dd_menu_a");
 
 a_parent.forEach(function(aitem){
 
-		aitem.addEventListener("click", function(){
+		aitem.addEventListener("mouseenter", function(){
 			a_parent.forEach(function(aitem){
 				aitem.classList.remove("active");
 			})
@@ -12,6 +12,7 @@ a_parent.forEach(function(aitem){
 			})
 			aitem.classList.add("active");
 		})
+
 })
 
 dd_menu_a.forEach(function(dd_menu_item){
