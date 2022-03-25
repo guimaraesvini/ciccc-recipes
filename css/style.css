@@ -2,6 +2,12 @@
     --orangeColor:#FB9300;
     --grayColor: #343F56;
     --whiteColor: white;
+    --fsHeading2: font-size: 42px;
+    --fsHeading3: font-size: 30px;
+    --fsFooterIcons: font-size: 22px;
+    --fsParagraph: font-size: 16px;
+    --ffHeading: font-family: 'Rubik';
+    --ffParagraph: font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -12,7 +18,6 @@ body{
 header{
      z-index: 3;
     justify-content: space-between;
-   
 }
 nav ul{
     width: 70%;
@@ -27,15 +32,6 @@ nav a{
     color:  var(--grayColor);
 }
 
-
-/* ====== MAIN BANNER ======== */
-/* .hero{
-    height: 100vh;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-} */
-
 .container{
     display: flex;
     align-items: center;
@@ -44,7 +40,7 @@ nav a{
 
 .slider{
     display: block;
-position: relative;
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -56,10 +52,7 @@ position: relative;
 .slider__image{
     display: flex;
     align-items: bottom;
-    justify-content: bottom
-;
-    font-size: 50px;
-    font-weight: bold;
+    justify-content: bottom;
     position: absolute;
     top: 0;
     left: 0;
@@ -68,19 +61,6 @@ position: relative;
     transition: 1s;
     opacity: 0;
     background-size: cover;
-}
-
-.slider__image > span{
-    color: rgb(255 250 255);
-    font-size: 1.5em;
-
-    position: absolute;
-bottom: 0.3em;
-    
-    left: 0.3em;
-    transition: 2s;
-    margin-left: 190px;
-    margin-bottom: 100px;
 }
 
 .slider__image.active{
@@ -185,16 +165,16 @@ bottom: 0.3em;
 }
 
 .about-us h2{
-    font-size: 42px;
-    font-family: 'Rubik';
+    font-size: var(--fsHeading2);
+    font-family: var(--ffHeading);
 }
 
 .about-us p{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ffParagraph);
     font-weight: 300;
     padding-top: 16px;
-    font-size: 16px;
+    font-size: var(--fsParagraph);
     line-height: 22px;
 }
 
@@ -258,28 +238,28 @@ bottom: 0.3em;
 }
 
 .recipes h3{
-    font-family: 'Rubik';
+    font-family: var(--ffHeading);
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: var(--fsHeading3);
 }
 
 .recipes p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--ffParagraph);
     font-weight: 300;
     padding-top: 16px;
-    font-size: 16px;
+    font-size: var(--fsParagraph);
     line-height: 22px;
     margin-bottom: 20px;
 }
 
 .recipes button{
-    font-family: 'Rubik';
+    font-family: var(--ffHeading);
     border: none;
     background-color: var(--grayColor);
     color: var(--orangeColor);
     text-transform: uppercase;
     padding: 10px 26px;
-    font-size: 16px;
+    font-size: var(--fsParagraph);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -308,7 +288,7 @@ footer ul{
 }
 
 footer ul li{
-    font-size: 22px;
+    font-size: var(--fsFooterIcons);
 }
 
 footer ul a{
