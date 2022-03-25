@@ -58,11 +58,8 @@
 	margin-right: 0;
 }
 
-.navbar ul li a:hover,
-.navbar ul li a.a_parent.active,
-.navbar .dd_menu ul li a:hover,
-.navbar .dd_menu ul li a.active{
-	background: #555555;
+.navbar .dd_menu ul li a:hover{
+	background: #bd9b61;
 }
 
 .navbar .dd_menu{
