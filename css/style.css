@@ -60,6 +60,7 @@ nav a{
     height: 100%;
     transition: 1s;
     opacity: 0;
+    background: center;
     background-size: cover;
 }
 
