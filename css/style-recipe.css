@@ -70,14 +70,13 @@ main{
     background-color: #C8C6C6;
     border-radius: 10px;
 }
-/* 
-INSIDE THE TABS */
+
+/* INSIDE THE TABS */
 
 .image-recipe{
     height: auto;
     width: 900px;
     border-radius: 20px;
-    
 }
 .ingredients-page{
     margin-top:20px;
@@ -194,7 +193,6 @@ nutrition */
   cursor: pointer;
   position: absolute;
   top: 50%;
-  
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -222,7 +220,7 @@ nutrition */
 
 /* Number text (1/3 etc) */
 .numbertext {
-    font-family:'Rubik', sans-serif ;
+  font-family:'Rubik', sans-serif ;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -269,7 +267,7 @@ nutrition */
     left: 0;
     z-index: 999999999;
   }
-  
+
   .modal-content {
     width: 50%;
     height: 50%;
@@ -295,7 +293,7 @@ nutrition */
     font-family: 'Rubik';
     color: #343F56;
  }
-  
+
   .sign-overlay.active {
     visibility: visible;
     text-align: center;
@@ -318,7 +316,7 @@ nutrition */
     padding-right: 50px;
     transition: all 0.2s ease-in-out;
 }
-  
+
   button {
     cursor: pointer;
   }
