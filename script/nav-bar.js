@@ -1,5 +1,5 @@
-var a_parent =  document.querySelectorAll(".a_parent");
-var dd_menu_a = document.querySelectorAll(".dd_menu_a");
+let a_parent =  document.querySelectorAll(".a_parent");
+let dd_menu_a = document.querySelectorAll(".dd_menu_a");
 
 a_parent.forEach(function(aitem){
 

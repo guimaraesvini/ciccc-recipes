@@ -8,14 +8,12 @@ let currentSlide = 0;
 
 const nextSlide = () => {
   currentSlide == slides.length - 1 ? (currentSlide = 0) : currentSlide++;
-  // console.log(currentSlide);
   navLinkChange();
   changeSlide();
 };
 
 const prevSlide = () => {
   currentSlide == 0 ? (currentSlide = slides.length - 1) : currentSlide--;
-  // console.log(currentSlide);
   navLinkChange();
   changeSlide();
 };
