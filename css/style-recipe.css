@@ -4,22 +4,6 @@ body{
     overflow-x: hidden;
 }
 
-/* NAV */
-
-
-header ul{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-header a{
-    text-decoration: none;
-    color:  #343F56;
-}
-
 /* TABS */
 
 [data-tab-content]{

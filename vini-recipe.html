@@ -81,23 +81,23 @@
             </div>
         </div>
     </header>
-    <section class="sec">
-        <ul class="tabs">
-            <li data-tab-target="#ingredients" class="active tab" >INGREDIENTS</li>
-            <li data-tab-target="#howto" class="tab">HOW TO PREPARE</li>
-            <li data-tab-target="#photo" class="tab" >PHOTOS</li>
-            <li data-tab-target="#nutrition" class="tab in" >NUTRITION FACTS</li>
+    <div class="tabs-container">
+        <ul class="tabs-list">
+            <li data-tab-target="#ingredients" class="active tab-title" >INGREDIENTS</li>
+            <li data-tab-target="#howto" class="tab-title">HOW TO PREPARE</li>
+            <li data-tab-target="#photo" class="tab-title" >PHOTOS</li>
+            <li data-tab-target="#nutrition" class="tab-title margin-right" >NUTRITION FACTS</li>
         </ul>
-    </section>
+    </div>
     <main>
         <div class="tab-content">
             <div id="ingredients" data-tab-content class="active">
-                <div class="ingredients-container" >
+                <div class="ingredients-page" >
                     <figure><img src="images/recipe.png" alt="Recipe Ceviche" class="image-recipe"></figure>
-                    <div class="ln" ><h2>Ingredients</h2></div>
-                    <div class="ingredients-list-cont">
+                    <div class="title-of-tab"><h2>Ingredients</h2></div>
+                    <div class="ingredients-list-container">
                         <div class="ingredients-list">
-                            <ul class="ul-ingredients">                    
+                            <ul class="ingredients-items">                    
                                 <li>1 ½ pounds very fresh and high quality fish filets corvina, halibut, escolar, hamachi, mahi-mahi</li>
                                 <li>1 red onion thinly sliced</li>
                                 <li>1 cup freshly squeezed lime juice from about 35- 40 key limes, or 15-20 Peruvian limes</li>
@@ -107,7 +107,7 @@
                                 <li>Finely chopped cilantro to taste</li>
                             </ul>
                             <h2>Serve With</h2>
-                            <ul class="ul-ingredients">
+                            <ul class="ingredients-items">
                                 <li>Lettuce leaves</li>
                                 <li>Cancha, tostado or chulpe corn nuts</li>
                                 <li>Fresh boiled corn</li>
@@ -140,8 +140,8 @@
                 </div>
             </div>
             <div id="howto" data-tab-content class="">
-                <div class="howto-cont">
-                    <div class="instruct"> <h2>Instructions</h2></div>
+                <div class="howto-container">
+                    <div class="title-instruction"> <h2>Instructions</h2></div>
                     <div class="howto-list">
                         <ol class="">
                              <li>Cut the fish into small cubes, place in a glass bowl and cover with cold water and 1 tablespoon of salt, cover and refrigerate while you prepare the onions and juice the limes.</li>
@@ -204,7 +204,7 @@
             <div id="nutrition" data-tab-content class="">
                 <div class="nutrition">
                     <h3>The fiber content in grains such as corn gives us a feeling of satiety or fullness and helps prevent intestinal constipation problems. <br> The nutritional table per portion is:</h3>
-                    <ul class="ul1">
+                    <ul class="nutrition-items">
                         <li>Fanesca provides energy (Kcal): 179</li>
                         <li>Energy (Kj): 568</li>
                         <li>Protein (g): 8.6</li>
