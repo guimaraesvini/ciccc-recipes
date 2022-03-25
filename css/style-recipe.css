@@ -7,7 +7,7 @@ body{
 /* NAV */
 
 
-nav ul{
+header ul{
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@ nav ul{
     margin: 0 auto;
 }
 
-nav a{
+header a{
     text-decoration: none;
     color:  #343F56;
 }
@@ -30,10 +30,9 @@ nav a{
     display: block;
 }
 
-.sec{
+.tabs-container{
     display: flex;
     justify-content: center;
-    
 }
 
 main{
@@ -42,7 +41,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-.tabs{
+.tabs-list{
     display: flex;
     color: #343F56;
     font-family:'Rubik', sans-serif ;
@@ -53,16 +52,16 @@ main{
     padding-bottom: 20px;
     border-bottom: #343F56 2px solid ;
 }
-.tab{
+.tab-title{
     cursor: pointer;
     padding: 10px;
     margin-left: 80px;
 }
-.in{
+.margin-right{
     margin-right: 80px;
 }
 
-.tab.active{
+.tab-title.active{
     background-color: #C8C6C6;
     border-radius: 10px;
 }
@@ -80,7 +79,7 @@ INSIDE THE TABS */
     border-radius: 20px;
     
 }
-.ingredients-container{
+.ingredients-page{
     margin-top:20px;
 }
 .tab-content{
@@ -93,7 +92,7 @@ h2{
     font-family:'Rubik', sans-serif  ;
     font-size: 25px;
 }
-.ln{
+.title-of-tab{
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -103,7 +102,7 @@ h2{
     font-size: 20px;
 }
 
-.ul-ingredients{
+.ingredients-items{
     margin-top: 40px;
     margin-bottom: 40px;
     font-family:'Montserrat', sans-serif ;
@@ -111,7 +110,7 @@ h2{
     line-height: 40px;
 }
 
-.ul-ingredients li{
+.ingredients-items li{
     list-style: square;
 }
 
@@ -141,7 +140,7 @@ ol{
     width: 800px;
     text-justify:auto;
 }
-.instruct{
+.title-instruction{
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -163,7 +162,7 @@ nutrition */
     line-height: 50px;
     font-size: 20px;
 }
-.ul1{
+.nutrition-items{
     margin-top: 20px;
     margin-bottom: 40px;
     font-family:'Montserrat', sans-serif ;

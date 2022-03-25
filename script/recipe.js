@@ -45,10 +45,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" activo", "");
+      dots[i].className = dots[i].className.replace("slide", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " activo";
+  dots[slideIndex-1].className += "slide";
 }
 
 

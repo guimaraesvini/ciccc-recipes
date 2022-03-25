@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jorge.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="css/style-recipe.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,25 +80,25 @@
                     </ul>
             </div>
         </div>
-        <script src="script/jorge.js"></script>
+        <script src="./script/nav-bar.js"></script>
     </header>
-    <section class="sec">
-        <ul class="tabs">
-            <li data-tab-target="#ingredients" class="active tab" >INGREDIENTS</li>
-            <li data-tab-target="#howto" class="tab">HOW TO PREPARE</li>
-            <li data-tab-target="#photo" class="tab" >PHOTOS</li>
-            <li data-tab-target="#nutrition" class="tab in" >NUTRITION FACTS</li>
+    <div class="tabs-container">
+        <ul class="tabs-list">
+            <li data-tab-target="#ingredients" class="active tab-title" >INGREDIENTS</li>
+            <li data-tab-target="#howto" class="tab-title">HOW TO PREPARE</li>
+            <li data-tab-target="#photo" class="tab-title" >PHOTOS</li>
+            <li data-tab-target="#nutrition" class="tab-title margin-right" >NUTRITION FACTS</li>
         </ul>
-    </section>
+    </div>
     <main>
         <div class="tab-content">
             <div id="ingredients" data-tab-content class="active">
-                <div class="ingredients-container" >
+                <div class="ingredients-page" >
                     <figure><img src="images/Receta-fanesca.jpg" alt="recipe foto" class="image-recipe"></figure>
-                    <div class="ln" ><h2>Ingredients</h2></div>
-                    <div class="ingredients-list-cont">
+                    <div class="title-of-tab" ><h2>Ingredients</h2></div>
+                    <div class="ingredients-list-container">
                         <div class="ingredients-list">
-                            <ul class="ul-ingredients">
+                            <ul class="ingredients-items">
                                 <li>2 lbs bacalao or dried salt cod</li>
                                 <li>6 cups of diced sambo or fresh squash zucchini, about 2 ½ lbs</li>
                                 <li>6 cups of diced zapallo or squash about a small sized squash butternut squash or a large kabocha squash</li>
@@ -127,7 +127,7 @@
                                 <li>Salt to taste</li>
                             </ul>
                             <h2>Serve With</h2>
-                            <ul class="ul-ingredients">
+                            <ul class="ingredients-items">
                                 <li>Hardboiled egg slices</li>
                                 <li>Fried ripe plantains</li>
                                 <li>Empanadas de viento or Ecuadorian fried cheese empanadas</li>
@@ -160,8 +160,8 @@
                 </div>
             </div>
             <div id="howto" data-tab-content class="">
-                <div class="howto-cont">
-                    <div class="instruct"> <h2>Instructions</h2></div>
+                <div class="howto-container">
+                    <div class="title-instruction"> <h2>Instructions</h2></div>
                     <div class="howto-list">
                         <ol class="" >
                             <li>Soak the salt cod in water for 24 hours (or even up to 48 hours if you want a very mild salt cod flavor), changing the water every 6-8 hours. Each time the water should be less and less salty, at the end cut the cod into medium sized pieces (if it doesn’t come already cut).</li>
@@ -223,7 +223,7 @@
             <div id="nutrition" data-tab-content class="">
                 <div class="nutrition">
                     <h3>The fiber content in grains such as corn gives us a feeling of satiety or fullness and helps prevent intestinal constipation problems. <br> The nutritional table per portion is:</h3>
-                    <ul class="ul1">
+                    <ul class="nutrition-items">
                         <li>Fanesca provides energy (Kcal): 179</li>
                         <li>Energy (Kj): 568</li>
                         <li>Protein (g): 8.6</li>
