@@ -9,26 +9,23 @@
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/style-recipe.css">
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/style-recipe.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/yuto.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-    
             <div class="navbar">
                 <ul>
                     <a href="index.html"><img src="images/logo-ciccc-recipes.png" alt="Logo CICCC RECIPES"></a>
                     <li><a href="#" class="a_parent">
                         <div class="wrap">
-                        
                             <span class="text"><img src="images/icon-nav.png" alt=""></span>
                         </div>
                         </a>
@@ -37,72 +34,56 @@
                                 <li>
                                     <a href="vini-recipe.html" class="dd_menu_a">
                                         <div class="wrap">
-                                            
-                                            
-                                            <span class="text">
-                                            Vini
-                                            </span>
+                                            <span class="text">Vini</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="nicolas-recipe.html" class="dd_menu_a">
                                         <div class="wrap">
-                                            
-                                            
-                                            <span class="text">
-                                            Nicolas
-                                            </span>
+                                            <span class="text">Nicolas</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="jorge-recipe.html" class="dd_menu_a">
                                         <div class="wrap">
-                                            
-                                            <span class="text">
-                                            Jorge
-                                            </span>
+                                            <span class="text">Jorge</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="yuto-recipe.html"  class="dd_menu_a">
                                         <div class="wrap">
-                                            
                                             <span class="text">Yuto</span>
                                         </div>
                                     </a>
-                                    
-                                        </ul>
                                     </div>
                                 </li>
-                                
-                                
                             </ul>
                         </div>
-                    </li>			
-                    </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <section class="sec">
-        <ul class="tabs">
-            <li data-tab-target="#ingredients" class="active tab" >INGREDIENTS</li>
-            <li data-tab-target="#howto" class="tab">HOW TO PREPARE</li>
-            <li data-tab-target="#photo" class="tab" >PHOTOS</li>
-            <li data-tab-target="#nutrition" class="tab in" >NUTRITION FACTS</li>
+    <section class="tabs-container">
+        <ul class="tabs-list">
+            <li data-tab-target="#ingredients" class="active tab-title" >INGREDIENTS</li>
+            <li data-tab-target="#howto" class="tab-title">HOW TO PREPARE</li>
+            <li data-tab-target="#photo" class="tab-title" >PHOTOS</li>
+            <li data-tab-target="#nutrition" class="tab-title in" >NUTRITION FACTS</li>
         </ul>
     </section>
     <main>
         <div class="tab-content">
             <div id="ingredients" data-tab-content class="active">
-                <div class="ingredients-container" >
+                <div class="ingredients-page" >
                     <figure><img src="images/Tonteki.jpeg" alt="recipe foto" class="image-recipe"></figure>
-                    <div class="ln" ><h2>Ingredients</h2></div>
-                    <div class="ingredients-list-cont">
+                    <div class="title-of-tab" ><h2>Ingredients</h2></div>
+                    <div class="ingredients-list-container">
                         <div class="ingredients-list">
-                            <ul class="ul-ingredients">
+                            <ul class="ingredients-items">
                                 <li>Thick Pork Chop 230g</li>
                                 <li>Shredded Cabbage 100g</li>
                                 <li>Dark, rich thick sauce(3 Tbsp ponzu, 3Tbsp sake, 1/2 Tbsp soy sauce)</li>
@@ -110,8 +91,8 @@
                                 <li>Black Pepper and Salt both 1/8 Tbsp(Optional)</li>
                                 <li>Garlic</li>
                             </ul>
-                            <div class="ln" ><h2>Serve with</h2></div>
-                            <ul class="ul-ingredients">
+                            <div><h2>Serve with</h2></div>
+                            <ul class="ingredients-items">
                                 <li>White rice</li>
                                 <li>Miso soup</li>
                             </ul>
@@ -138,8 +119,8 @@
                 </div>
             </div>
             <div id="howto" data-tab-content class="">
-                <div class="howto-cont">
-                    <div class="instruct"> <h2>Instructions</h2></div>
+                <div class="howto-container">
+                    <div class="title-instruction"> <h2>Instructions</h2></div>
                     <div class="howto-list">
                         <ol class="" >
                             <li>Prepare ingredients, 1 small bowl and 1 medium bowl</li>
@@ -169,28 +150,20 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                    <img src="./images/Tonteki_GloveCut.jpeg" class="carousel-photo">
-                    
+                        <img src="./images/Tonteki_GloveCut.jpeg" class="carousel-photo">
                     </div>
-  
                     <div class="mySlides fade">
-                    <img src="./images/Tonteki2.jpeg" class="carousel-photo">
-                    
+                        <img src="./images/Tonteki2.jpeg" class="carousel-photo">
                     </div>
-                    
                     <div class="mySlides fade">
+                        <img src="./images/p_omisenogoannnai_t2.jpeg" class="carousel-photo">
+                    </div>
 
-                    <img src="./images/p_omisenogoannnai_t2.jpeg" class="carousel-photo">
-                    
-                    </div>
-                    
-                        <!-- Next and previous buttons -->
+                    <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
+                </div>
                     <br>
-  
-  
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
@@ -201,7 +174,7 @@
             <div id="nutrition" data-tab-content class="">
                 <div class="nutrition">
                     <h3>Pork is mostly up of protein. It contains nine essential amino acids necessary for your body's growth and maintenance.<br> The nutritional table per portion is:</h3>
-                    <ul class="ul1">
+                    <ul class="nutrition-items">
                         <li>Tonteki provides energy (Kcal): 1500</li>
                         <li>Energy (Kj): 568</li>
                         <li>Protein (g): 15</li>
@@ -230,11 +203,12 @@
             </ul>
         </div>
     </footer>
+
     <script src="script/nav-bar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/modal.js"></script>
-<script src="script/recipe.js"></script>
-<script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
+    <script src="script/recipe.js"></script>
+    <script src="https://kit.fontawesome.com/40b1889db0.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
